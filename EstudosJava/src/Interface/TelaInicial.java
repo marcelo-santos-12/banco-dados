@@ -6,6 +6,7 @@
 package Interface;
 
 import java.util.ArrayList;
+import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
@@ -47,13 +48,13 @@ public class TelaInicial extends javax.swing.JFrame {
         jButton8 = new javax.swing.JButton();
         jButton9 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        insereGasto = new javax.swing.JButton();
+        excluiGasto = new javax.swing.JButton();
+        insereRendaFixa = new javax.swing.JButton();
+        insereRendaExtra = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
+        excluiRendaFixa = new javax.swing.JButton();
+        excluiRendaExtra = new javax.swing.JButton();
         jButton10 = new javax.swing.JButton();
         jButton11 = new javax.swing.JButton();
         jButton12 = new javax.swing.JButton();
@@ -165,10 +166,10 @@ public class TelaInicial extends javax.swing.JFrame {
                     .addComponent(totalGastos, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(rendaFixa, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, 27, Short.MAX_VALUE)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(rendaFixa, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(saldoAtual, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
@@ -176,63 +177,63 @@ public class TelaInicial extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(100, 100, 240));
         jPanel2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
 
-        jButton1.setBackground(new java.awt.Color(240, 0, 240));
-        jButton1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jButton1.setText("Inserir Gasto");
-        jButton1.setToolTipText("");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        insereGasto.setBackground(new java.awt.Color(240, 0, 240));
+        insereGasto.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        insereGasto.setText("Inserir Gasto");
+        insereGasto.setToolTipText("");
+        insereGasto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                insereGastoActionPerformed(evt);
             }
         });
 
-        jButton2.setBackground(new java.awt.Color(240, 0, 240));
-        jButton2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jButton2.setText("Excluir Gasto");
-        jButton2.setToolTipText("");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        excluiGasto.setBackground(new java.awt.Color(240, 0, 240));
+        excluiGasto.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        excluiGasto.setText("Excluir Gasto");
+        excluiGasto.setToolTipText("");
+        excluiGasto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                excluiGastoActionPerformed(evt);
             }
         });
 
-        jButton3.setBackground(new java.awt.Color(240, 0, 240));
-        jButton3.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jButton3.setText("Inserir Renda Fixa");
-        jButton3.setToolTipText("");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        insereRendaFixa.setBackground(new java.awt.Color(240, 0, 240));
+        insereRendaFixa.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        insereRendaFixa.setText("Inserir Renda Fixa");
+        insereRendaFixa.setToolTipText("");
+        insereRendaFixa.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                insereRendaFixaActionPerformed(evt);
             }
         });
 
-        jButton4.setBackground(new java.awt.Color(240, 0, 240));
-        jButton4.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jButton4.setText("Inserir Renda Extra");
-        jButton4.setToolTipText("");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        insereRendaExtra.setBackground(new java.awt.Color(240, 0, 240));
+        insereRendaExtra.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        insereRendaExtra.setText("Inserir Renda Extra");
+        insereRendaExtra.setToolTipText("");
+        insereRendaExtra.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                insereRendaExtraActionPerformed(evt);
             }
         });
 
         jButton5.setText("Gerar Gráfico de Gastos Anual");
 
-        jButton6.setBackground(new java.awt.Color(240, 0, 240));
-        jButton6.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jButton6.setText("Excluir Renda Fixa");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        excluiRendaFixa.setBackground(new java.awt.Color(240, 0, 240));
+        excluiRendaFixa.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        excluiRendaFixa.setText("Excluir Renda Fixa");
+        excluiRendaFixa.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                excluiRendaFixaActionPerformed(evt);
             }
         });
 
-        jButton7.setBackground(new java.awt.Color(240, 0, 240));
-        jButton7.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jButton7.setText("Excluir Renda Extra");
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
+        excluiRendaExtra.setBackground(new java.awt.Color(240, 0, 240));
+        excluiRendaExtra.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        excluiRendaExtra.setText("Excluir Renda Extra");
+        excluiRendaExtra.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
+                excluiRendaExtraActionPerformed(evt);
             }
         });
 
@@ -251,19 +252,20 @@ public class TelaInicial extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton4, javax.swing.GroupLayout.Alignment.LEADING))
+                    .addComponent(insereGasto, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(insereRendaFixa, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(insereRendaExtra, javax.swing.GroupLayout.Alignment.LEADING))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButton7, javax.swing.GroupLayout.DEFAULT_SIZE, 158, Short.MAX_VALUE)
-                    .addComponent(jButton6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(excluiRendaExtra, javax.swing.GroupLayout.DEFAULT_SIZE, 158, Short.MAX_VALUE)
+                    .addComponent(excluiRendaFixa, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(excluiGasto, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton11)
-                    .addComponent(jButton12)
-                    .addComponent(jButton13))
+                    .addComponent(jButton13)
+                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(jButton11, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton12, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -277,18 +279,18 @@ public class TelaInicial extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton1)
-                            .addComponent(jButton2)
+                            .addComponent(insereGasto)
+                            .addComponent(excluiGasto)
                             .addComponent(jButton11))
                         .addGap(4, 4, 4)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton3)
-                            .addComponent(jButton6)
+                            .addComponent(insereRendaFixa)
+                            .addComponent(excluiRendaFixa)
                             .addComponent(jButton12))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton4)
-                            .addComponent(jButton7)
+                            .addComponent(insereRendaExtra)
+                            .addComponent(excluiRendaExtra)
                             .addComponent(jButton13)))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -328,8 +330,10 @@ public class TelaInicial extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
         
-   static float auxTotal = 0; // retorna a soma de todo os gastos
+   float auxTotal = 0; // retorna a soma de todo os gastos
    float auxTotalRF = 0;
+   float auxTotalRE = 0;
+   float re, rf;
    ArrayList<String> RFCad = new ArrayList<>();
    ArrayList<String> RFVal = new ArrayList<>();
    ArrayList<String> RECad = new ArrayList<>();
@@ -339,15 +343,16 @@ public class TelaInicial extends javax.swing.JFrame {
    TesteInterface alterarRendaExtra = new TesteInterface();
    TesteInterface apenasExecutar = new TesteInterface();
    
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void insereGastoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_insereGastoActionPerformed
         //inserir gastos no tabela com funcao da classe testeinterface
         float valorAtual = Float.parseFloat(apenasExecutar.cadastraGastoTabela(jTable1)); // retorna o valor cadastradomno momento
         auxTotal += valorAtual;
         totalGastos.setText(" R$" + auxTotal);
-    }//GEN-LAST:event_jButton1ActionPerformed
+        calculaSaldo(auxTotal,rf, re,saldoAtual);
+    }//GEN-LAST:event_insereGastoActionPerformed
         
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        
+    private void excluiGastoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_excluiGastoActionPerformed
+        //excluir item da tabela
         int indiceLinha = jTable1.getSelectedRow(); // retorna o indice da linha atual selecionada 
         if(indiceLinha == -1){
             JOptionPane.showMessageDialog(null, "Selecione um item a ser excluído");
@@ -357,32 +362,38 @@ public class TelaInicial extends javax.swing.JFrame {
         totalGastos.setText("R$ " + auxTotal);
         ((DefaultTableModel) jTable1.getModel()).removeRow(jTable1.getSelectedRow()); //remove a linha selecionada
         }
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_excluiGastoActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void insereRendaFixaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_insereRendaFixaActionPerformed
         // Inserir Renda Fixa
-        alterarRendaFixa.cadastraRenda(RFCad, RFVal,"Descreva qual a origem da sua renda:","Descreva qual a o valor da sua renda:", rendaFixa);
-       
-    }//GEN-LAST:event_jButton3ActionPerformed
+       re = alterarRendaFixa.cadastraRenda(RFCad, RFVal,"Descreva qual a origem da sua renda:","Descreva qual a o valor da sua renda:", rendaFixa);
+       calculaSaldo(auxTotal, rf, re, saldoAtual);
+    }//GEN-LAST:event_insereRendaFixaActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    private void excluiRendaFixaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_excluiRendaFixaActionPerformed
         //Excluir renda fixa
         Object excluirRendaFixa = alterarRendaFixa.excluirRenda(RFCad);
         
-    }//GEN-LAST:event_jButton6ActionPerformed
+    }//GEN-LAST:event_excluiRendaFixaActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void insereRendaExtraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_insereRendaExtraActionPerformed
         //Inserir renda Extra
-        alterarRendaExtra.cadastraRenda(RECad, REVal, "Descreva qual a origem da sua renda:", "Descreva qual o valor da sua renda:", rendaExtra);
-        
-    }//GEN-LAST:event_jButton4ActionPerformed
+       rf = alterarRendaExtra.cadastraRenda(RECad, REVal, "Descreva qual a origem da sua renda:", "Descreva qual o valor da sua renda:", rendaExtra);
+       calculaSaldo(auxTotal,rf, re,saldoAtual);
+    }//GEN-LAST:event_insereRendaExtraActionPerformed
 
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+    private void excluiRendaExtraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_excluiRendaExtraActionPerformed
         //Excluir renda extra
-        Object excluirRendaExtra = alterarRendaExtra.excluirRenda(RECad);
+        Object excluirRendaExtra = alterarRendaExtra.excluirRenda(RECad);//retorna o objeto selecionado
         
-    }//GEN-LAST:event_jButton7ActionPerformed
+    }//GEN-LAST:event_excluiRendaExtraActionPerformed
 
+    
+    public void calculaSaldo(float totalGasto, float totalRendaFixa, float totalRendaExtra, JLabel label){
+        float saldo = totalRendaFixa + totalRendaExtra - totalGasto;    
+        label.setText("R$ " + saldo);
+    }
+    
     /**
      * @param args the command line arguments
      */
@@ -419,17 +430,17 @@ public class TelaInicial extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton excluiGasto;
+    private javax.swing.JButton excluiRendaExtra;
+    private javax.swing.JButton excluiRendaFixa;
+    private javax.swing.JButton insereGasto;
+    private javax.swing.JButton insereRendaExtra;
+    private javax.swing.JButton insereRendaFixa;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton13;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;

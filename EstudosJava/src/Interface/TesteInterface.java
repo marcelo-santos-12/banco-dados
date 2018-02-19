@@ -16,7 +16,8 @@ import javax.swing.table.DefaultTableModel;
  * @author marmh
  */
 public class TesteInterface {
-        float auxiliarTotal = 0;
+        float auxiliarTotalRenda = 0;
+        float auxiliarTotalGasto = 0;
     
     public Object excluirRenda(ArrayList array ){
         Object[] vetDescricao = new Object[array.size()];
@@ -29,17 +30,17 @@ public class TesteInterface {
         return escolhaApagar;
     }
     
-    public void cadastraRenda(ArrayList array1, ArrayList array2, String descricao, String valor, JLabel label){
+    public float cadastraRenda(ArrayList array1, ArrayList array2, String descricao, String valor, JLabel label){
        String descricaoR = JOptionPane.showInputDialog(descricao);
        array1.add(descricaoR);
        
        String valorR = JOptionPane.showInputDialog(valor);
        array2.add(valorR);
         
-       float auxiliar = Float.parseFloat(valorR);
-       auxiliarTotal += auxiliar;
+       auxiliarTotalRenda += Float.parseFloat(valorR);
        
-       label.setText("R$ " + auxiliarTotal);
+       label.setText("R$ " + auxiliarTotalRenda);
+       return auxiliarTotalRenda; //retorna o valor cadastrado
     }
     
     public String cadastraGastoTabela(JTable table){
